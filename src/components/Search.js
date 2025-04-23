@@ -2,7 +2,6 @@ import React from "react";
 
 function Search({ onSearchChange }) {
   const handleChange = (e) => {
-    // Call the parent component's search handler with the current input value
     onSearchChange(e.target.value);
   };
 

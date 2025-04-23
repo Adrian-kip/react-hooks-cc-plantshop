@@ -6,7 +6,7 @@ function PlantList({ plants = [], onUpdatePlant }) {
     <ul className="cards">
       {plants.map((plant) => (
         <PlantCard 
-          key={plant.id} // Make sure this is present
+          key={plant.id}
           plant={plant} 
           onUpdatePlant={onUpdatePlant} 
         />

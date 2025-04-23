@@ -18,7 +18,7 @@ function PlantCard({ plant, onUpdatePlant }) {
         className={isSoldOut ? "primary" : ""}
         onClick={handleSoldOut}
       >
-        {isSoldOut ? "Out of Stock" : "In Stock"} {/* Changed to match test */}
+        {isSoldOut ? "Out of Stock" : "In Stock"} 
       </button>
     </li>
   );

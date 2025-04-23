@@ -21,13 +21,13 @@ function NewPlantForm({ onAddPlant }) {
     const newPlant = {
       name: formData.name,
       image: formData.image,
-      price: formData.price // Keep as string to match test expectation
+      price: formData.price 
     };
 
     fetch("http://localhost:6001/plants", {
       method: "POST",
       headers: {
-        "Content-Type": "Application/JSON", // Match exact case expected by test
+        "Content-Type": "Application/JSON", 
       },
       body: JSON.stringify(newPlant),
     })
